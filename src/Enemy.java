@@ -1,4 +1,4 @@
-public class Enemy implements Mortal{
+public class Enemy implements Mortal {
     public int health;
 
     public Enemy (int health) {
