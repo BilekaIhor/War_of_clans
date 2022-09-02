@@ -13,9 +13,8 @@ public class Enemy implements Mortal{
         this.health = health;
     }
 
-    public int takeDamage(int damage) {
+    public void takeDamage(int damage) {
         setHealth(getHealth() - damage);
-        return health;
     }
 
     @Override
