@@ -4,7 +4,7 @@ public class Damn extends Enemy{
         super(health);
     }
 
-    private void canResurrect()  {
+    private void canResurrect() {
         if(!isAlive()){
             setHealth(100);
         } else

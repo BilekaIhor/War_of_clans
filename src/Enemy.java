@@ -1,7 +1,7 @@
 public class Enemy implements Mortal {
     public int health;
 
-    public Enemy (int health) {
+    public Enemy(int health) {
         this.health = health;
     }
 
@@ -9,7 +9,7 @@ public class Enemy implements Mortal {
         return health;
     }
 
-    public void setHealth (int health) {
+    public void setHealth(int health) {
         this.health = health;
     }
 

@@ -1,7 +1,7 @@
 public abstract class Hero extends Enemy {
     public String name;
 
-    public Hero (String name, int health) {
+    public Hero(String name, int health) {
         super(health);
         this.name = name;
     }
