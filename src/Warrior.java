@@ -1,13 +1,12 @@
 public class Warrior extends Hero {
 
-    public Warrior (String name) {
-        super(name);
-
+    public Warrior (String name, int health) {
+        super(name, health);
     }
 
     @Override
     public void attackEnemy(Enemy enemy) {
         enemy.takeDamage(5);
-        System.out.println(getName() + ", наніс удар мечем чужинцю " + enemy + "-5 HP");
+        System.out.println(getName() + ", наніс удар мечем чужинцю -5 до HP");
     }
 }
