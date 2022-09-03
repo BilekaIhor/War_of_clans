@@ -4,7 +4,7 @@ public class BattleGround {
         Mage mage = new Mage("Стрейндж", 100);
         Warrior warrior = new Warrior("Воїн", 100);
         Archer archer = new Archer("Робін", 100);
-        Enemy enemy = new Enemy( 100);
+        Enemy enemy = new Enemy(100);
 
     }
 }
