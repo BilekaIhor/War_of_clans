@@ -1,3 +1,8 @@
+package Characters;
+
+import Heroes.Enemy;
+import Heroes.Hero;
+
 public class Warrior extends Hero {
 
     public Warrior(String name, int health) {

@@ -1,5 +1,7 @@
+package Heroes;
+
 public abstract class Hero extends Enemy {
-    public String name;
+    private String name;
 
     public Hero(String name, int health) {
         super(health);

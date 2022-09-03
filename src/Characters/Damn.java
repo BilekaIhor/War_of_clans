@@ -1,4 +1,9 @@
-public class Damn extends Enemy{
+package Characters;
+
+import Heroes.Enemy;
+import Heroes.Hero;
+
+public class Damn extends Enemy {
 
     public Damn(int health) {
         super(health);
@@ -14,7 +19,7 @@ public class Damn extends Enemy{
     }
 
     @Override
-    public void attackHero(Hero hero) {
+    protected void attackHero(Hero hero) {
         hero.takeDamage(20);
         System.out.println("Проклятий, наніс удар герою [-20 до HP] героя");
     }
