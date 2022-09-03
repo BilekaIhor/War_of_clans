@@ -18,7 +18,7 @@ public class Enemy implements Mortal {
     }
 
     public void attackHero(Hero hero){
-        hero.takeDamage(3);
+        hero.takeDamage(20);
         System.out.println("Чужинець, наніс удар рукою по "+ hero.getName() +"у [-3 до HP] противника");
     }
 

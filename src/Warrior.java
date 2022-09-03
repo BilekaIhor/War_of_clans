@@ -6,7 +6,7 @@ public class Warrior extends Hero {
 
     @Override
     public void attackEnemy(Enemy enemy) {
-        enemy.takeDamage(5);
+        enemy.takeDamage(30);
         System.out.println(getName() + ", наніс удар мечем [-5 до HP] чужинця");
     }
 }

@@ -6,7 +6,7 @@ public class Archer extends Hero {
 
     @Override
     public void attackEnemy(Enemy enemy) {
-        enemy.takeDamage(15);
+        enemy.takeDamage(20);
         System.out.println(getName() + ", наніс постріл з арбалету [-15 до HP] чужинця");
     }
 }

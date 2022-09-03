@@ -6,7 +6,7 @@ public class Mage extends Hero {
 
     @Override
     public void attackEnemy(Enemy enemy) {
-        enemy.takeDamage(20);
+        enemy.takeDamage(40);
         System.out.println(getName() + ", наніс удар вогняним шаром [-20 до HP] чужинця");
     }
 }
