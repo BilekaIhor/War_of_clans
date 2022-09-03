@@ -17,14 +17,13 @@ public class Enemy implements Mortal {
         setHealth(getHealth() - damage);
     }
 
-    @Override
-    public boolean isAlive(){
-        return (getHealth() > 0);
-    }
-
-    @Override
     public void attackHero(Hero hero){
         hero.takeDamage(3);
         System.out.println("Чужинець, наніс удар рукою по "+ hero.getName() +"у [-3 до HP] противника");
+    }
+
+    @Override
+    public boolean isAlive(){
+        return (getHealth() > 0);
     }
 }
