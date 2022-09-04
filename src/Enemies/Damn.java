@@ -20,6 +20,6 @@ public class Damn extends Enemy {
     @Override
     public void attackHero(Hero hero) {
         hero.takeDamage(20);
-        System.out.println("Проклятий, наніс удар герою [-20 до HP] героя");
+        System.out.println("Проклятий, наніс удар " + hero.getName() + " [-20 до HP] героя");
     }
 }
