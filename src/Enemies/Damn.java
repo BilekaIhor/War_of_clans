@@ -1,6 +1,5 @@
-package Characters;
+package Enemies;
 
-import Heroes.Enemy;
 import Heroes.Hero;
 
 public class Damn extends Enemy {
@@ -9,17 +8,17 @@ public class Damn extends Enemy {
         super(health);
     }
 
-    private void canResurrect() {
+    public void canResurrect() {
         if(!isAlive()){
             setHealth(100);
         } else
         {
-            System.out.println("Проклятий, відійшов у вічність");
+            System.out.println("Проклятий, ще може битися");
         }
     }
 
     @Override
-    protected void attackHero(Hero hero) {
+    public void attackHero(Hero hero) {
         hero.takeDamage(20);
         System.out.println("Проклятий, наніс удар герою [-20 до HP] героя");
     }

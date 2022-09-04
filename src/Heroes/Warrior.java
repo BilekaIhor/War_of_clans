@@ -1,7 +1,6 @@
-package Characters;
+package Heroes;
 
-import Heroes.Enemy;
-import Heroes.Hero;
+import Enemies.Enemy;
 
 public class Warrior extends Hero {
 

@@ -1,7 +1,9 @@
 package Heroes;
 
+import Enemies.Enemy;
+
 public abstract class Hero extends Enemy {
-    private String name;
+    protected String name;
 
     public Hero(String name, int health) {
         super(health);

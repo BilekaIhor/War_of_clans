@@ -1,6 +1,5 @@
-package Characters;
+package Enemies;
 
-import Heroes.Enemy;
 import Heroes.Hero;
 
 public class Kamikaze extends Enemy {
@@ -10,7 +9,7 @@ public class Kamikaze extends Enemy {
     }
 
     @Override
-    protected void attackHero(Hero hero) {
+    public void attackHero(Hero hero) {
         hero.takeDamage(80);
         Kamikaze.this.setHealth(getHealth() - 80);
         System.out.println("Смертник, жертвує собою в бою [-80 до HP] героя");

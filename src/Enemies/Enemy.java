@@ -1,7 +1,9 @@
-package Heroes;
+package Enemies;
+
+import Heroes.Hero;
 
 public class Enemy implements Mortal {
-    private int health;
+    protected int health;
 
     public Enemy(int health) {
         this.health = health;
@@ -19,9 +21,9 @@ public class Enemy implements Mortal {
         setHealth(getHealth() - damage);
     }
 
-    protected void attackHero(Hero hero){
+    public void attackHero(Hero hero) {
         hero.takeDamage(20);
-        System.out.println("Чужинець, наніс удар рукою по "+ hero.getName() +"у [-20 до HP] героя");
+        System.out.println("Нежить, наніс удар рукою по "+ hero.getName() +"у");
     }
 
     @Override
