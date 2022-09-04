@@ -1,4 +1,5 @@
 import Enemies.Damn;
+import Enemies.Enemy;
 import Enemies.Kamikaze;
 import Heroes.Archer;
 import Heroes.Mage;
@@ -15,9 +16,14 @@ public class BattleGround {
         Damn damn = new Damn(100);
         Kamikaze kamikaze = new Kamikaze(100);
 
+        Enemy enemy = new Enemy(100);
+
         kamikaze.attackHero(warrior);
-        System.out.println(warrior.getHealth());
-        System.out.println(warrior.isAlive());
-        System.out.println(kamikaze.getHealth());
+        warrior.attackHero(archer);
+        mage.attackEnemy(kamikaze);
+        damn.attackHero(archer1);
+        archer1.attackEnemy(damn);
+
+        damn.canResurrect();
     }
 }
